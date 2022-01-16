@@ -19,12 +19,12 @@ import { CameraIcon } from "@heroicons/react/solid";
 
 export default function Example() {
   return (
-    <div className="bg-white overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white overflow-hidden bannerpad">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen" />
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
-            <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+            <h2 className="text-base text-sky-600 font-semibold tracking-wide uppercase">
               My
             </h2>
             <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -67,7 +67,7 @@ export default function Example() {
             </svg>
             <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
               <figure>
-                <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+                <div className="aspect-w-12 aspect-h-12 lg:aspect-none">
                   <img
                     className="rounded-lg shadow-lg object-cover object-center"
                     src="/images/profile.jpg"

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mt-std {
+  @apply mt-8;
+}
+.mt-pad {
+  @apply mt-16 sm:mt-24;
+}
+.bannerpad {
+  @apply py-16 sm:py-24;
+}
+ 
+
+ul {
+  li {
+    margin-left:1rem;
+  }
+  li + li {
+    margin-top: .5rem;
+  }
+}
