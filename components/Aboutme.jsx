@@ -106,9 +106,17 @@ export default function Example() {
             </div>
             <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
-                {`I am passionate about creating things that people love to use. I love learning and get excited about the thought that I have the opportunity to learn any skill, and that if I try hard enough and stay dedicated, I can create something amazing. This passion for learning as much as I can extends beyond my professional career and into my own personal life.`}
+                I am passionate about creating things that people love to use,
+                especially when it allows me to learn a new skill along the way.
+                I enjoy the challenge of developing my skillset and committing
+                hard work and dedication to improving my craft. My passion for
+                learning transcends both my professional career and personal
+                life.
               </p>
-              <p>When I am not spending time with my family, I throw myself deeply into any one of my current hobbies, which include:</p>
+              <p>
+                When I am not spending time with my family, I throw myself
+                deeply into any one of my current hobbies, which include:
+              </p>
               <div className="grid grid-cols-1 gap-4">
                 {data.map((item) => (
                   <div
@@ -125,9 +133,7 @@ export default function Example() {
                       <div className="text-md font-semibold text-gray-700">
                         {item.title}
                       </div>
-                      <div className="text-sm  text-gray-500">
-                        {item.text}
-                      </div>
+                      <div className="text-sm  text-gray-500">{item.text}</div>
                     </div>
                   </div>
                 ))}
