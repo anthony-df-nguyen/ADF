@@ -25,13 +25,16 @@ export default function Example() {
                 </li>
                 <li>
                   Implemented SCRUM process and methodology for product
-                  development team of 6 engineers within first 45 days of
-                  starting
+                  development team within first 45 days of starting
                 </li>
-                <li>Introduced product roadmap methodology and planning processes</li>
                 <li>
-                  Overhauled company-wide Confluence documentation process for
-                  over 30 employees
+                  Helped coordinate and create a product development lifecycle
+                  cross-functionally between executives, product, QA, devops,
+                  training and documentation teams{" "}
+                </li>
+                <li>
+                  Developed an internal facing application for more efficient
+                  daily workflows for product and QA team members within 1 day
                 </li>
               </ul>
             </dl>
