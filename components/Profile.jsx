@@ -1,22 +1,3 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/typography'),
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
-import { CameraIcon } from "@heroicons/react/solid";
-
 export default function Example() {
   return (
     <div className="bg-white overflow-hidden bannerpad">
@@ -65,7 +46,7 @@ export default function Example() {
                 fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
               />
             </svg>
-            <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+            <div className="relative text-base mx-auto max-w-prose lg:max-w-[400px]">
               <figure>
                 <div className="aspect-w-12 aspect-h-12 lg:aspect-none">
                   <img

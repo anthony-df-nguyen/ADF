@@ -74,7 +74,7 @@ export default function Example() {
                 ))}
               </dl>
               <div className="mt-10 text-base font-medium text-sky-600">
-                <a href="https://occovid.com/">View occovid.com</a>
+                <a href="https://occovid.vercel.app/">View occovid.com</a>
               </div>
             </div>
           </Project>

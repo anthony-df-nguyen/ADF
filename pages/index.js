@@ -12,19 +12,19 @@ export default function Home() {
     <Page title="Anthony DF Nguyen">
       <Hero />
       <Profile />
+      <Section title="Experience" subtitle="Work" bg="bg-gray-50">
+        <Work />
+      </Section>
+      <Section title="Skills" subtitle="Hard" bg="bg-white">
+        <Skills />
+      </Section>
+
       <Section
         title="Education"
         subtitle="My"
         bg="bg-gray-50"
         text="University of California, Irvine | 2011 to 2014">
         <Education />
-      </Section>
-
-      <Section title="Experience" subtitle="Work" bg="bg-white">
-        <Work />
-      </Section>
-      <Section title="Skills" subtitle="Hard" bg="bg-gray-50">
-        <Skills />
       </Section>
     </Page>
   );

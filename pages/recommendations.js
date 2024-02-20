@@ -28,9 +28,9 @@ export default function Example() {
           {`"I have worked with Anthony for 8 years and have found him to be extremely competent and reliable. His natural understanding of software and technology makes it easy to collaborate and complete product requirements and successfully deliver sprints. As a manager you can be rest assured that any tasks given to Anthony will be completed correctly and on-time"`}
         </Recommendation>
         <div className="mt-pad"></div>
-        <Recommendation name="Danny Chen" title="COO, Stratana Inc" side="left">
+        {/* <Recommendation name="Danny Chen" title="COO, Stratana Inc" side="left">
           {`"It has been a pleasure working alongside Anthony for over 7 years. He is highly organized and communicates very effectively. Anthony has great attention to detail especially regarding product requirements, prioritization, testing, and refinements. He is intelligent and has a strong work ethic. Anthony would be a valuable addition to any organization"`}
-        </Recommendation>
+        </Recommendation> */}
         <div className="mt-pad"></div>
         <Recommendation
           name="Lyndsay Andrae"

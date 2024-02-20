@@ -20,21 +20,24 @@ export default function Example() {
             <dl className="mt-std">
               <ul className="mt-std text-base text-gray-500 list-disc">
                 <li>
-                  Serving as Product Manager for the Decision Support Team,
-                  responsible for 3 applications{" "}
+                  Secured $45 million in additional revenue from strategic customer
+                  contracts through product work and customer account
+                  management and consulting.
                 </li>
                 <li>
-                  Implemented SCRUM process and methodology for product
-                  development team within first 45 days of starting
+                  Implemented a formal agile SDLC within first 3-months which was
+                  used as the basis adopted company-wide resulting in releases being 4x more
+                  efficient.
                 </li>
                 <li>
-                  Helped coordinate and create a product development lifecycle
-                  cross-functionally between executives, product, QA, devops,
-                  training and documentation teams{" "}
+                  Successfully built first customer-facing documentation site
+                  with embedded analytics and feedback loops with 0
+                  engineering resources in under 2 months.
                 </li>
                 <li>
-                  Developed an internal facing application for more efficient
-                  daily workflows for product and QA team members within 1 day
+                  Built an internal tooling application at near-zero cost
+                  that is currently adopted by 70% of engineer, data, and
+                  product team members on a weekly basis.
                 </li>
               </ul>
             </dl>
@@ -47,9 +50,7 @@ export default function Example() {
             <h2 className="text-3xl font-extrabold text-gray-900">
               Stratana Inc.
             </h2>
-            <p className="mt-4 text-lg text-gray-500">
-              Vice President of Product Development
-            </p>
+            <p className="mt-4 text-lg text-gray-500">Product Manager</p>
             <p className="mt-4 text-lg text-gray-500">July 2013 - Aug 2021</p>
           </div>
           <div className="mt-12 lg:mt-0 lg:col-span-2">
@@ -60,65 +61,28 @@ export default function Example() {
             </p>
             {/* Bullets */}
             <dl className="mt-std">
-              <dt className="text-lg leading-6 font-medium text-gray-600">
-                Product Management and Development
-              </dt>
               <ul className="mt-std text-base text-gray-500 list-disc">
                 <li>
-                  Successfully implemented over 2,500 features and stories
-                  across numerous initiatives, epics and sprints
+                  Generated over $7 million in revenue through strategic account
+                  renewals and acquisitions of new customers.{" "}
                 </li>
                 <li>
-                  Launched 14 significant major product releases over the last 5
-                  years alone
+                  Built and launched a comprehensive platform training portal
+                  with over 100 videos and documentation within 3 months.
                 </li>
                 <li>
-                  Gathered ideas and stories from users and internal
-                  stakeholders, prioritized the product backlog and formulated
-                  the product roadmap
+                  Redesigned and relaunched company website at 0 cost, resulting
+                  in 300% increase in web traffic, 40% reduction in bounce rate,
+                  and 20% improvement in mobile optimization score.
                 </li>
                 <li>
-                  Designed wireframes, mockups, product requirements, acceptance
-                  criteria and oversaw the completion of sprints and tasks
-                </li>
-              </ul>
-            </dl>
-            <dl className="mt-std">
-              <dt className="text-lg leading-6 font-medium text-gray-600">
-                Customer and Business Development
-              </dt>
-              <ul className="mt-std text-base text-gray-500 list-disc">
-                <li>
-                  Facilitated over 2,000 hours of consulting, training and
-                  interviews with customers to validate new ideas and identify
-                  pain points, user personas and stories
+                  Developed a comprehensive online training center for over 20
+                  product solutions in 3 months, including the creation of all
+                  content, UI, database, and videos.
                 </li>
                 <li>
-                  Achieved over $7m in revenue from strategic account renewals
-                  and new customers through my product management and customer
-                  development efforts
-                </li>
-                <li>
-                  Developed an online training center for over 20 product
-                  solutions in 3 months, including creation of all content, UI,
-                  database and videos
-                </li>
-              </ul>
-            </dl>
-            <dl className="mt-std">
-              <dt className="text-lg leading-6 font-medium text-gray-600">
-                Marketing and Sales
-              </dt>
-              <ul className="mt-std text-base text-gray-500 list-disc">
-                <li>
-                  Redesigned and rebuilt company website increasing traffic by
-                  300%, mobile optimization score by 20%, and reducing bounce
-                  rate by 40%
-                </li>
-                <li>
-                  Conducted product demos and sales presentations to C-level
-                  executives, key stakeholders, and end users for strategic
-                  accounts and new prospective clients
+                  Launched 3 major solutions that saw an adoption rate of 80% in
+                  our customer engagements.
                 </li>
               </ul>
             </dl>

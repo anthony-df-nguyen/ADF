@@ -25,7 +25,7 @@ const actions = [
     icon: UsersIcon,
   },
   {
-    title: "SCRUM/Kanban",
+    title: "SCRUM",
     icon: ViewBoardsIcon,
   },
   {
@@ -94,7 +94,7 @@ export default function Example() {
             actionIdx === actions.length - 1
               ? "rounded-bl-lg rounded-br-lg sm:rounded-bl-none"
               : "",
-            "shadow relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-sky-500"
+            "shadow relative group bg-white p-4 focus-within:ring-2 focus-within:ring-inset focus-within:ring-sky-500"
           )}>
           <div className="">
             <h3 className="text-lg font-medium text-gray-700 ">
