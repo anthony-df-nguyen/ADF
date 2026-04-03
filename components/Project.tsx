@@ -1,6 +1,12 @@
-/* This example requires Tailwind CSS v2.0+ */
+import { ReactNode } from "react";
 
-export default function Example(props) {
+interface ProjectProps {
+  title: string;
+  img: string;
+  children: ReactNode;
+}
+
+export default function Project({ title, img, children }: ProjectProps) {
   return (
     <div className="relative">
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
@@ -41,17 +47,15 @@ export default function Example(props) {
             </svg>
           </div>
           <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
-            {/* Testimonial card*/}
-            <div className="relative pt-64 pb-0 sm:pb-24  rounded-md shadow-xl overflow-hidden">
+            <div className="relative pt-64 pb-0 sm:pb-24 rounded-md shadow-xl overflow-hidden">
               <img
                 className="absolute inset-0 h-full w-full object-cover object-left-top"
-                src={props.img}
-                alt=""
+                src={img}
+                alt={title}
               />
               <div className="absolute inset-0 mix-blend-multiply" />
-              <div className="absolute inset-0 bg-gradient-to-t  opacity-90" />
-              <div className="relative px-8">
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t opacity-90" />
+              <div className="relative px-8"></div>
             </div>
           </div>
         </div>
@@ -60,14 +64,10 @@ export default function Example(props) {
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
             <h2 className="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">
-              {props.title}
+              {title}
             </h2>
-            <div className="mt-6 text-gray-500 space-y-6">
-                {props.children}
-            </div>
+            <div className="mt-6 text-gray-500 space-y-6">{children}</div>
           </div>
-
-     
         </div>
       </div>
     </div>

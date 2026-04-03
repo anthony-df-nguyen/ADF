@@ -1,17 +1,24 @@
-/* This example requires Tailwind CSS v2.0+ */
+import { ReactNode } from "react";
 import { DotsHorizontalIcon } from "@heroicons/react/outline";
 
-export default function Example(props) {
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-  }
+interface RecommendationProps {
+  name: string;
+  title: string;
+  side: "left" | "right";
+  children: ReactNode;
+}
 
+function classNames(...classes: string[]): string {
+  return classes.filter(Boolean).join(" ");
+}
+
+export default function Recommendation({ name, title, side, children }: RecommendationProps) {
   return (
-    <section className="bg-gray-50 overflow-hidden ">
+    <section className="bg-gray-50 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <svg
           className={classNames(
-            props.side === "left" ? "right-full" : "right-0",
+            side === "left" ? "right-full" : "right-0",
             "absolute top-full transform translate-x-1/3 -translate-y-1/4 lg:translate-x-1/2 xl:-translate-y-1/2 hidden lg:block"
           )}
           width={404}
@@ -46,27 +53,21 @@ export default function Example(props) {
           />
         </svg>
         <div className="relative">
-          {/* <img
-            className="mx-auto h-8"
-            src="https://tailwindui.com/img/logos/workcation-logo-sky-600-mark-gray-800-and-sky-600-text.svg"
-            alt="Workcation"
-          /> */}
-          <div className="w-min block mx-auto  text-sky-500 ">
+          <div className="w-min block mx-auto text-sky-500">
             <DotsHorizontalIcon
               className="text-center h-12 w-12"
               aria-hidden="true"
             />
           </div>
-          <blockquote className="mt-std ">
+          <blockquote className="mt-std">
             <div className="max-w-3xl mx-auto text-left text-md lg:text-xl leading-9 font-md text-gray-600">
-              <p>{props.children}</p>
+              <p>{children}</p>
             </div>
-            <footer className="mt-std ">
-              <div className=" md:flex md:items-center md:justify-center">
-               
-                <div className=" mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
+            <footer className="mt-std">
+              <div className="md:flex md:items-center md:justify-center">
+                <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
                   <div className="text-base font-medium text-gray-900">
-                    {props.name}
+                    {name}
                   </div>
 
                   <svg
@@ -77,7 +78,7 @@ export default function Example(props) {
                   </svg>
 
                   <div className="text-base font-medium text-gray-500">
-                    {props.title}
+                    {title}
                   </div>
                 </div>
               </div>

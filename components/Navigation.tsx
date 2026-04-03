@@ -1,13 +1,15 @@
-import React from "react";
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import Image from "next/legacy/image";
 
+interface NavItem {
+  name: string;
+  href: string;
+}
 
-
-const navigation = [
+const navigation: NavItem[] = [
   { name: "Resume", href: "/" },
   { name: "Recommendations", href: "/recommendations" },
   { name: "Projects", href: "/projects" },
@@ -16,7 +18,7 @@ const navigation = [
 
 export default function Navigation() {
   return (
-    <div className="relative z-10  lg:bg-white lg:max-w-2xl lg:w-full ">
+    <div className="relative z-10 lg:bg-white lg:max-w-2xl lg:w-full">
       <svg
         className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
         fill="currentColor"
@@ -40,6 +42,7 @@ export default function Navigation() {
                     layout="fixed"
                     height="40"
                     width="40"
+                    alt="Logo"
                   />
                 </Link>
                 <div className="-mr-2 flex items-center md:hidden">
@@ -84,6 +87,7 @@ export default function Navigation() {
                     layout="fixed"
                     height="40"
                     width="40"
+                    alt="Logo"
                   />
                 </div>
                 <div className="-mr-2">
@@ -108,18 +112,18 @@ export default function Navigation() {
       </Popover>
 
       {/* Text */}
-      <main className=" mx-auto max-w-7xl bannerpad px-4  sm:px-6  lg:px-8 ">
-        <div className=" sm:text-center lg:text-left">
-          <h1 className="tracking-tight  ">
-            <span className="text-4xl sm:text-5xl md:text-6xl text-white lg:text-gray-900 block xl:inline font-bold lg:font-extrabold ">
+      <main className="mx-auto max-w-7xl bannerpad px-4 sm:px-6 lg:px-8">
+        <div className="sm:text-center lg:text-left">
+          <h1 className="tracking-tight">
+            <span className="text-4xl sm:text-5xl md:text-6xl text-white lg:text-gray-900 block xl:inline font-bold lg:font-extrabold">
               Anthony Nguyen
             </span>{" "}
-            <span className="text-3xl sm:text-4xl md:text-5xl block text-white text-sky-600 lg:text-sky-600 xl:inline font-medium lg:font-extrabold ">
+            <span className="text-3xl sm:text-4xl md:text-5xl block text-white text-sky-600 lg:text-sky-600 xl:inline font-medium lg:font-extrabold">
               Product Manager
             </span>
           </h1>
           <p className="mt-3 text-base text-white lg:text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-            Srategic, agile, and customer centric Product Manager with over 8
+            Strategic, agile, and customer centric Product Manager with over 8
             years of experience working with B2B enterprise products and
             solutions
           </p>

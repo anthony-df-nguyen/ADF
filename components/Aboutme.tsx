@@ -1,7 +1,15 @@
-import { CameraIcon, CodeIcon, VideoCameraIcon } from "@heroicons/react/outline";
-import { FaBasketballBall, FaBicycle, FaBowlingBall, FaGuitar } from "react-icons/fa";
-import { MdBikeScooter } from "react-icons/md";
-const data = [
+import { CameraIcon, CodeIcon } from "@heroicons/react/outline";
+import { FaBasketballBall, FaBicycle, FaGuitar } from "react-icons/fa";
+import { ComponentType, SVGProps } from "react";
+
+interface HobbyItem {
+  title: string;
+  icon: ComponentType<SVGProps<SVGSVGElement> & { className?: string; "aria-hidden"?: boolean | "true" | "false" }>;
+  color: string;
+  text: string;
+}
+
+const data: HobbyItem[] = [
   {
     title: "Photography",
     icon: CameraIcon,
@@ -33,11 +41,12 @@ const data = [
     text: "Although you won't find me wearing those skin-tight colorful jerseys, you will see me on my road bike. My personal record for a long distance ride is 53 miles. Hoping to crack 100 someday.",
   },
 ];
-function classNames(...classes) {
+
+function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Aboutme() {
   return (
     <div className="overflow-hidden">
       <div className="relative mt-std max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -93,6 +102,7 @@ export default function Example() {
                     src="/images/about.jpg"
                     width={1184}
                     height={1376}
+                    alt="Anthony"
                   />
                 </div>
               </figure>
@@ -121,11 +131,11 @@ export default function Example() {
                 {data.map((item) => (
                   <div
                     key={item.title}
-                    className="bg-white p-3 rounded-lg shadow  inline-flex items-start gap-4">
+                    className="bg-white p-3 rounded-lg shadow inline-flex items-start gap-4">
                     <span
                       className={classNames(
                         item.color,
-                        " bg-gray-100 rounded-lg p-3"
+                        "bg-gray-100 rounded-lg p-3"
                       )}>
                       <item.icon className="h-6 w-6" aria-hidden="true" />
                     </span>
@@ -133,7 +143,7 @@ export default function Example() {
                       <div className="text-md font-semibold text-gray-700">
                         {item.title}
                       </div>
-                      <div className="text-sm  text-gray-500">{item.text}</div>
+                      <div className="text-sm text-gray-500">{item.text}</div>
                     </div>
                   </div>
                 ))}

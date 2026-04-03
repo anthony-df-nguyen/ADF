@@ -1,4 +1,4 @@
-export default function Example() {
+export default function Profile() {
   return (
     <div className="bg-white overflow-hidden bannerpad">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +52,7 @@ export default function Example() {
                   <img
                     className="rounded-lg shadow-lg object-cover object-center"
                     src="/images/profile.jpg"
-                    alt="Whitney leaning against a railing on a downtown street"
+                    alt="Anthony Nguyen"
                     width={1184}
                     height={1376}
                   />
@@ -71,7 +71,6 @@ export default function Example() {
                 achieve over $7 million of revenue
               </p>
             </div>
-      
           </div>
         </div>
       </div>

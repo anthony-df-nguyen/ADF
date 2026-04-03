@@ -1,10 +1,9 @@
-/* This example requires Tailwind CSS v2.0+ */
-export default function Example() {
+export default function Work() {
   return (
     <div className="">
-      <div className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Cogility */}
-        <div className="lg:grid lg:grid-cols-3 lg:gap-8 ">
+        <div className="lg:grid lg:grid-cols-3 lg:gap-8">
           <div>
             <h2 className="text-3xl font-extrabold text-gray-900">Cogility</h2>
             <p className="mt-4 text-lg text-gray-500">Product Manager</p>
@@ -12,9 +11,9 @@ export default function Example() {
           </div>
           <div className="mt-12 lg:mt-0 lg:col-span-2">
             <p className="text-gray-500 font-bold">
-              Instant, Informed Intelligence from Streaming Data. The world’s
+              Instant, Informed Intelligence from Streaming Data. The world&apos;s
               most advanced continuous intelligence solutions, trusted to solve
-              the world’s most critical intelligence challenges.
+              the world&apos;s most critical intelligence challenges.
             </p>
             {/* Bullets */}
             <dl className="mt-std">
@@ -64,7 +63,7 @@ export default function Example() {
               <ul className="mt-std text-base text-gray-500 list-disc">
                 <li>
                   Generated over $7 million in revenue through strategic account
-                  renewals and acquisitions of new customers.{" "}
+                  renewals and acquisitions of new customers.
                 </li>
                 <li>
                   Built and launched a comprehensive platform training portal

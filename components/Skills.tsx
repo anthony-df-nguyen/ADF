@@ -1,3 +1,4 @@
+import { ComponentType, SVGProps } from "react";
 import {
   ClipboardListIcon,
   CodeIcon,
@@ -15,7 +16,12 @@ import {
   ViewListIcon,
 } from "@heroicons/react/outline";
 
-const actions = [
+interface SkillItem {
+  title: string;
+  icon: ComponentType<SVGProps<SVGSVGElement> & { className?: string; "aria-hidden"?: boolean | "true" | "false" }>;
+}
+
+const actions: SkillItem[] = [
   {
     title: "Agile Product Management",
     icon: LightningBoltIcon,
@@ -52,7 +58,6 @@ const actions = [
     title: "Product requirements documentation",
     icon: ClipboardListIcon,
   },
-
   {
     title: "Sales and marketing",
     icon: PresentationChartLineIcon,
@@ -75,13 +80,13 @@ const actions = [
   },
 ];
 
-function classNames(...classes) {
+function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Skills() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-lg  divide-y divide-gray-50 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-lg divide-y divide-gray-50 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
       {actions.map((action, actionIdx) => (
         <div
           key={action.title}
@@ -97,7 +102,7 @@ export default function Example() {
             "shadow relative group bg-white p-4 focus-within:ring-2 focus-within:ring-inset focus-within:ring-sky-500"
           )}>
           <div className="">
-            <h3 className="text-lg font-medium text-gray-700 ">
+            <h3 className="text-lg font-medium text-gray-700">
               <div className="focus:outline-none">
                 <div className="flex items-center gap-4">
                   <span

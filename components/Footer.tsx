@@ -1,7 +1,25 @@
 import Link from "next/link";
-import {FaGithub,FaLinkedin} from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-const navigation = {
+import { ComponentType, SVGProps } from "react";
+
+interface NavItem {
+  name: string;
+  href: string;
+}
+
+interface SocialItem {
+  name: string;
+  href: string;
+  icon: ComponentType<SVGProps<SVGSVGElement> & { className?: string; "aria-hidden"?: boolean | "true" | "false" }>;
+}
+
+interface NavigationConfig {
+  main: NavItem[];
+  social: SocialItem[];
+}
+
+const navigation: NavigationConfig = {
   main: [
     { name: "Resume", href: "/" },
     { name: "Recommendations", href: "/recommendations" },
@@ -27,7 +45,7 @@ const navigation = {
   ],
 };
 
-export default function Example() {
+export default function Footer() {
   return (
     <footer className="bg-sky-900">
       <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
@@ -55,7 +73,6 @@ export default function Example() {
             </a>
           ))}
         </div>
-      
       </div>
     </footer>
   );

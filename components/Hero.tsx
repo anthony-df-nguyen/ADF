@@ -1,5 +1,5 @@
-import Image from "next/legacy/image"
-import Navigation from './Navigation';
+import Image from "next/legacy/image";
+import Navigation from "./Navigation";
 
 export default function Hero() {
   return (
@@ -8,8 +8,8 @@ export default function Hero() {
         <Navigation />
         {/* Image */}
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <div className="w-full object-cover  lg:w-full lg:h-full">
-            <Image src="/images/splash2.jpg" objectFit="cover" layout="fill" />
+          <div className="w-full object-cover lg:w-full lg:h-full">
+            <Image src="/images/splash2.jpg" objectFit="cover" layout="fill" alt="Hero background" />
           </div>
         </div>
       </div>

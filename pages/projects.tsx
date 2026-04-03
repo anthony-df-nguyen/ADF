@@ -1,33 +1,54 @@
 import Page from "../components/Page";
 import Hero from "../components/Hero";
 import Section from "../components/Section";
-import Project from '../components/Project'
+import Project from "../components/Project";
 
-const occovid = [
+interface Stat {
+  label: string;
+  value: string;
+}
+
+const occovid: Stat[] = [
   { label: "Launched", value: "April 2020" },
   { label: "Users", value: "~60,000" },
   { label: "Avg Page Load Time", value: "0.83 sec" },
 ];
 
-const stratana = [
+const stratana: Stat[] = [
   { label: "Reduced Bounce Rate by", value: "40%" },
   { label: "Increased Traffic by", value: "300%" },
   { label: "NextJS Real Experience Score", value: "100%" },
   { label: "Largest Contentful Paint", value: "0.23 sec" },
 ];
-const nba = [
+
+const nba: Stat[] = [
   { label: "Games Spoiled", value: "0" },
   { label: "My Satisfaction", value: "100% :)" },
 ];
 
+function StatGrid({ stats }: { stats: Stat[] }) {
+  return (
+    <div className="mt-10">
+      <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
+        {stats.map((stat) => (
+          <div key={stat.label} className="border-t-2 border-gray-100 pt-6">
+            <dt className="text-base font-medium text-gray-500">{stat.label}</dt>
+            <dd className="text-3xl font-extrabold tracking-tight text-gray-900">
+              {stat.value}
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  );
+}
 
-export default function Example() {
+export default function Projects() {
   return (
     <Page title="Projects">
       <Hero />
       <Section title="Projects" subtitle="My" bg="bg-gray-50">
         <div className="mt-pad">
-          {" "}
           <Project title="occovid.com" img="/images/occovid.png">
             <div className="text-xl text-sky-500 font-bold tracking-tight">
               Creator | Developer
@@ -57,30 +78,13 @@ export default function Example() {
               available sources. This loop allowed me to provide all the
               visualizations and capabilities that the site has today.
             </p>
-            {/* Stats section */}
-            <div className="mt-10">
-              <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-                {occovid.map((stat) => (
-                  <div
-                    key={stat.label}
-                    className="border-t-2 border-gray-100 pt-6">
-                    <dt className="text-base font-medium text-gray-500">
-                      {stat.label}
-                    </dt>
-                    <dd className="text-3xl font-extrabold tracking-tight text-gray-900">
-                      {stat.value}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-              <div className="mt-10 text-base font-medium text-sky-600">
-                <a href="https://occovid.vercel.app/">View occovid.com</a>
-              </div>
+            <StatGrid stats={occovid} />
+            <div className="mt-10 text-base font-medium text-sky-600">
+              <a href="https://occovid.vercel.app/">View occovid.com</a>
             </div>
           </Project>
         </div>
         <div className="mt-pad">
-          {" "}
           <Project title="stratana.com" img="/images/stratana.png">
             <div className="text-xl text-sky-500 font-bold tracking-tight">
               Lead Web Designer
@@ -102,30 +106,13 @@ export default function Example() {
               testing of the website. Together, we were able to complete the
               entire redesign in 3 weeks.
             </p>
-            {/* Stats section */}
-            <div className="mt-10">
-              <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-                {stratana.map((stat) => (
-                  <div
-                    key={stat.label}
-                    className="border-t-2 border-gray-100 pt-6">
-                    <dt className="text-base font-medium text-gray-500">
-                      {stat.label}
-                    </dt>
-                    <dd className="text-3xl font-extrabold tracking-tight text-gray-900">
-                      {stat.value}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-              <div className="mt-10 text-base font-medium text-sky-600">
-                <a href="https://stratana.com/">View stratana.com</a>
-              </div>
+            <StatGrid stats={stratana} />
+            <div className="mt-10 text-base font-medium text-sky-600">
+              <a href="https://stratana.com/">View stratana.com</a>
             </div>
           </Project>
         </div>
         <div className="mt-pad">
-          {" "}
           <Project title="No-Spoiler NBA Schedule" img="/images/nba.png">
             <div className="text-xl text-sky-500 font-bold tracking-tight">
               Creator | Developer
@@ -140,25 +127,11 @@ export default function Example() {
             <p>
               {`This website is built using NextJS to fetch the schedule from the current season from NBA.com and display which games are on today, at what time, without showing the score. Users can also navigate to past or future days, or use the calendar to pick a specific day (within the current season). A 'Watch Game' button allows the user to be redirected to the game on NBA.com`}
             </p>
-            {/* Stats section */}
-            <div className="mt-10">
-              <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-                {nba.map((stat) => (
-                  <div
-                    key={stat.label}
-                    className="border-t-2 border-gray-100 pt-6">
-                    <dt className="text-base font-medium text-gray-500">
-                      {stat.label}
-                    </dt>
-                    <dd className="text-3xl font-extrabold tracking-tight text-gray-900">
-                      {stat.value}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-              <div className="mt-10 text-base font-medium text-sky-600">
-                <a href="https://nospoilnba.vercel.app/">View No-Spoiler NBA Schedule</a>
-              </div>
+            <StatGrid stats={nba} />
+            <div className="mt-10 text-base font-medium text-sky-600">
+              <a href="https://nospoilnba.vercel.app/">
+                View No-Spoiler NBA Schedule
+              </a>
             </div>
           </Project>
         </div>

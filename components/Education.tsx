@@ -1,6 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */
-import Section from "../components/Section";
-export default function Example() {
+export default function Education() {
   return (
     <div className="">
       <div className="">
