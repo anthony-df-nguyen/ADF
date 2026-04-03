@@ -63,12 +63,7 @@ export default function Profile() {
           <div className="mt-8 lg:mt-0">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg text-gray-500">
-                Strategic, agile, and customer centric Product Manager with over
-                8 years of experience growing and launching B2B SaaS products.
-                Technically gifted with intermediate proficiency in web
-                development. Utilized all skills cross-functionally with
-                developers, customers, leadership, sales and marketing to
-                achieve over $7 million of revenue
+                Senior Product Manager with nearly 10 years of experience building enterprise SaaS products for federal, defense, and healthcare markets. I have directly driven over $45M in contract value, launched a company&apos;s first AI product, and grown active user bases by 300% through workflow-driven product decisions. What sets me apart is genuine technical depth: I build and ship production web apps in React and Next.js, prototype with real code instead of mockups, and operate comfortably at the intersection of product, engineering, and customer operations.
               </p>
             </div>
           </div>
