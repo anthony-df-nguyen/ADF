@@ -70,7 +70,7 @@ export const coreSkills: SkillItem[] = [
       "Builds and deploys interactive prototypes in React/Next.js for real user testing — faster than Figma, more realistic, shareable via URL.",
   },
   {
-    title: "Enterprise Implementation Leadership",
+    title: "Implementation Leadership",
     icon: OfficeBuildingIcon,
     summary:
       "On-site implementation leadership with a $45M federal contract directly attributed to embedded customer discovery and program launch.",

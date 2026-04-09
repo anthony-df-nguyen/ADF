@@ -11,9 +11,9 @@ export default function Recommendation() {
         {recommendations.map((rec) => (
           <Card key={rec.name}>
             <div>
-              <div className="text-h4">{rec.name}</div>
+              <div className="text-h4">{rec.title}</div>
               <div className="text-accent text-eyebrow">
-                {rec.title} | {rec.company}
+                {rec.company}
               </div>
             </div>
             <div className="mt-4 mx-auto">

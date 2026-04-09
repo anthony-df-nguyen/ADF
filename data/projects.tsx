@@ -23,7 +23,7 @@ const occovid: ProjectData = {
   githubURL: "https://github.com/anthony-df-nguyen/occovid-next",
   img: "/images/occovid.png",
   description:
-    "A free, mobile-first COVID-19 dashboard for Orange County, CA — built and maintained solo from April 2020 through the pandemic. Built with Next.js, React, Tailwind CSS",
+    "A free, mobile-first COVID-19 dashboard for Orange County, CA — built and maintained solo from April 2020 through the pandemic. Built with Next.js, React, Tailwind CSS.",
   why: "At the beginning of the pandemic, Orange County did not provide a comprehensive or mobile-friendly dashboard. The county posted daily numbers but no aggregate view showing how the pandemic was evolving. I started manually tracking the numbers in a spreadsheet and publishing static dashboards in Google Slides, sharing them on Reddit and Twitter with local communities. Within a week, the dashboards were getting consistent daily traffic — including visits from county officials. It became clear that Google Slides wouldn't scale as the data grew, and the experience on mobile was poor. So I built a real site.",
   achievements: (
     <ul className="list-disc">
@@ -158,7 +158,7 @@ const nba: ProjectData = {
   githubURL: "https://github.com/anthony-df-nguyen/nospoilnba",
   img: "/images/nba.png",
   description:
-    "A free, mobile-first COVID-19 dashboard for Orange County, CA — built and maintained solo from April 2020 through the pandemic. Built with Next.js, React, Tailwind CSS",
+    "A free, mobile-first NBA schedule app that hides game scores by default — built for fans who watch games on delay. nospoilnba.vercel.app | Built with Next.js, React, Tailwind CSS.",
   why: "I used to watch NBA games a few hours or days after the game on NBA League Pass so that I could fast-forward passed the timeouts. The problem was I'd always spoil the results of the game when I would Google search game times and schedules. This app uses the NBA.com's JSON file to show games each day and defaults to hide scores.",
   sections: [
     {

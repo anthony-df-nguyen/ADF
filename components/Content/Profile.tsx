@@ -34,11 +34,10 @@ export default function Profile() {
               Senior Product Manager with nearly 10 years of experience building
               enterprise SaaS products for federal, defense, and healthcare
               markets. I have directly driven over $45M in contract value,
-              launched a company&apos;s first AI product, and grown active user
-              bases by 300% through workflow-driven product decisions. What sets
-              me apart is genuine technical depth: I build and ship production
-              web apps in React and Next.js, prototype with real code instead of
-              mockups, and operate comfortably at the intersection of product,
+              launched a company&apos;s first AI product, and grown active users through workflow-driven product decisions. What sets
+              me apart is technical depth - I build and ship
+              web apps with React and Next.js, prototype with real code instead of
+              mockups, and operate at the intersection of product,
               engineering, and customer operations.
             </div>
           </div>
