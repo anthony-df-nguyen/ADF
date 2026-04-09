@@ -1,7 +1,7 @@
-import Page from "../components/Page";
-import Hero from "../components/Hero";
-import Section from "../components/Section";
-import Aboutme from "../components/Aboutme";
+import Page from "@/components/Layout/Page";
+import Hero from "@/components/Layout/Hero";
+import Section from "@/components/Layout/Section";
+import Aboutme from "@/components/Content/Aboutme";
 
 export default function About() {
   return (
@@ -13,3 +13,4 @@ export default function About() {
     </Page>
   );
 }
+ debugger
