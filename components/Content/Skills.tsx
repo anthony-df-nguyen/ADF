@@ -3,6 +3,7 @@ import Accordion from "@/components/UI/Accordion";
 import Card from "@/components/UI/Card";
 import Divider from "@/components/UI/Divider";
 import Chip from "@/components/UI/Chip";
+import OutlinedGridList from "@/components/Content/OutlinedGridList";
 import { DotGrid } from "@/components/UI/DotGrid";
 
 export default function Skills() {
@@ -11,8 +12,8 @@ export default function Skills() {
       {/* Core Skills */}
 
       <div className="relative">
-        <DotGrid side="right"/>
-        <div className="grid lg:grid-cols-2 xl:grid-cols-2 gap-4">
+        <OutlinedGridList skills={coreSkills} />
+        {/* <div className="grid lg:grid-cols-2 xl:grid-cols-2 gap-4">
           {coreSkills.map((group) => (
             <Card key={group.title}>
               <div className="flex items-center gap-4">
@@ -21,10 +22,9 @@ export default function Skills() {
                   {group.title}
                 </div>
               </div>
-              <div className="text-body-sm mt-4">{group.summary}</div>
             </Card>
           ))}
-        </div>
+        </div> */}
       </div>
 
       <Divider title="Dive Deeper" />
@@ -36,7 +36,7 @@ export default function Skills() {
             key={group.title}
             title={group.title}
             id={id}
-            titleClassName="text-h3"
+            titleClassName="text-lead"
           >
             {/* Content */}
             <div className="lg:p-6 flex flex-col gap-8">

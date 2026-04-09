@@ -7,7 +7,7 @@ type Props = {
 
 const Card = ({ children }: Props) => {
   return (
-    <div className="relative group bg-white shadow-sm border-gray-200 rounded-xl p-6 lg:p-8">
+    <div className="relative group bg-white shadow-sm border-gray-200 rounded p-6 lg:p-8">
       <div>
         <div className="focus:outline-none">{children}</div>
       </div>
