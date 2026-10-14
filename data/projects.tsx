@@ -156,22 +156,38 @@ const nba: ProjectData = {
   role: "Creator | Developer",
   url: "https://nospoilnba.vercel.app/",
   githubURL: "https://github.com/anthony-df-nguyen/nospoilnba",
-  img: "/images/nba.png",
+  img: "/images/nba_2.png",
   description:
-    "A free, mobile-first NBA schedule app that hides game scores by default — built for fans who watch games on delay. nospoilnba.vercel.app | Built with Next.js, React, Tailwind CSS.",
-  why: "I used to watch NBA games a few hours or days after the game on NBA League Pass so that I could fast-forward passed the timeouts. The problem was I'd always spoil the results of the game when I would Google search game times and schedules. This app uses the NBA.com's JSON file to show games each day and defaults to hide scores.",
+    "A free, mobile-first NBA schedule app that hides game scores by default — built for fans who watch games on delay. Built with Next.js, React, Tailwind CSS.",
+  why: "I watch NBA games a few hours or days after the game on NBA League Pass so that I could fast-forward passed the timeouts, or just due to a lack of time watching to watch them live. The problem was I'd always spoil the results of the game when I would Google search game times and schedules, or Twitter would send me notifications or show things on my feed that spoils the game. This app uses the ESPN APIs to show games each day and defaults to hide scores, as well as basic features to follow your favorite teams to see upcoming/recent games.",
   sections: [
     {
       title: "Key Features",
       content: (
         <ul className="list-disc">
-          <li>Defaults to hide scores</li>
-          <li>Links to the NBA.com link to watch the game</li>
-          <li>Date menu and controls to jump to specific days or months.</li>
           <li>
-            {" "}
-            Map-based views displaying case rates, deaths, and vaccination data
-            by city and zip code{" "}
+            <strong>Scores hidden by default:</strong> look up a game without
+            being spoiled
+          </li>
+          <li>
+            <strong>Per-game reveal:</strong> reveal only the game you just
+            finished watching
+          </li>
+          <li>
+            <strong>Global &quot;reveal all&quot; toggle:</strong> an opt-out
+            for when spoilers no longer matter
+          </li>
+          <li>
+            <strong>Follow your teams:</strong> skip the full league slate and
+            see only upcoming and recent games for the teams you care about
+          </li>
+          <li>
+            <strong>Date strip and calendar sheet:</strong> jump to any day or
+            month quickly on a phone
+          </li>
+          <li>
+            <strong>Times in your local time zone:</strong> tip-off times are
+            converted automatically, with a note showing which zone is used
           </li>
         </ul>
       ),
