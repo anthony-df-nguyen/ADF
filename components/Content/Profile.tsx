@@ -31,13 +31,13 @@ export default function Profile() {
           </div>
           <div className="mt-8 md:mt-0">
             <div className="text-body">
-              Senior Product Manager with nearly 10 years of experience building
-              enterprise SaaS products for federal, defense, and healthcare
-              markets. I have directly driven over $45M in contract value,
-              launched a company&apos;s first AI product, and grown active users through workflow-driven product decisions. What sets
-              me apart is technical depth - I build and ship
-              web apps with React and Next.js, prototype with real code instead of
-              mockups, and operate at the intersection of product,
+              Senior Product Manager with 12+ years of experience building
+              enterprise SaaS products for financial services, federal and
+              defense, and healthcare markets. I have directly driven over $45M
+              in contract value, launched a company&apos;s first AI product, and
+              now own the enterprise feature set that helped achieve $4M in enterprise revenue
+              at Jump AI. What sets
+              me apart is technical depth - I could build mockups and interactive prototypes before Claude was popular, using React, Tailwind, and NextJS, and operate at the intersection of product,
               engineering, and customer operations.
             </div>
           </div>

@@ -187,6 +187,43 @@ export const skillGroups: SkillGroup[] = [
     tools: ["Pendo", "PostHog", "Google Analytics", "Apache Superset","Figma", "Maze","Confluence"],
   },
   {
+    title: "Enterprise Platform & Compliance",
+    skills: [
+      {
+        title: "Identity, Access & SCIM Provisioning",
+        icon: UsersIcon,
+        summary:
+          "Owns users, roles, permissions, and automated provisioning for large enterprise accounts.",
+        details: [
+          "Launched SCIM automated provisioning to 6 large enterprise accounts within 2 months at Jump AI",
+          "Cut manually created users in those accounts by 80%",
+          "Own billing, checkout, and license upgrades alongside user management",
+        ],
+      },
+      {
+        title: "Enterprise APIs & Data Export",
+        icon: ServerIcon,
+        summary:
+          "Ships the GraphQL enterprise API, data export, and usage reporting that enterprise buyers require.",
+        details: [
+          "Built and shipped the enterprise feature set (SCIM, GraphQL API, data export, compliance settings) that helped achieve $4M in enterprise revenue",
+          "Designed a security-focused data export process that reduced data-mishandling incidents to zero",
+        ],
+      },
+      {
+        title: "Compliance & Regulated Industries",
+        icon: ScaleIcon,
+        summary:
+          "Builds compliance, data-retention, and consent controls for financial services, federal, and healthcare customers.",
+        details: [
+          "Own compliance and data-retention settings and consent detection for wealth management firms, RIAs, and broker-dealers",
+          "Partner with solutions engineers and account executives to pilot and launch with enterprise buyers and compliance stakeholders",
+        ],
+      },
+    ],
+    tools: ["GraphQL", "REST APIs", "SCIM", "Amazon Bedrock", "Audit logging"],
+  },
+  {
     title: "Analytics & Data",
     skills: [
       {
@@ -241,9 +278,9 @@ export const skillGroups: SkillGroup[] = [
         title: "Code Prototyping",
         icon: TemplateIcon,
         summary:
-          "Skips Figma. Builds and deploys interactive React prototypes for user testing — faster and more realistic.",
+          "Builds and deploys interactive prototypes for user testing — faster and more realistic.",
         details: [
-          "Instead of clickable Figma flows, builds interactive React/Next.js prototypes deployed as live URLs for real user testing",
+          "Builds interactive Claude and/or React/Next.js prototypes deployed as live URLs for real user testing",
           "More realistic for test users and immediately shareable without any designer handoff",
           "Reduces prototype-to-validated-feedback cycles significantly compared to traditional PM tooling",
         ],
@@ -270,6 +307,6 @@ export const skillGroups: SkillGroup[] = [
         ],
       },
     ],
-    tools: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel", "Node.js", "REST APIs", "Kubernetes", "Docker", "DB Gate", "ChatGPT", "Claude Cowork", "Ollama"],
+    tools: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel", "Node.js", "REST APIs", "Kubernetes", "Docker", "DB Gate", "ChatGPT", "Claude Code", "Claude Cowork", "Ollama"],
   },
 ];
