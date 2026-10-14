@@ -8,9 +8,22 @@ export interface WorkEntry {
 
 export const workHistory: WorkEntry[] = [
   {
+    company: "Jump AI",
+    title: "Senior Product Manager",
+    dates: "May 2026 - Present",
+    description:
+      "Lead two product pods, User Management and Enterprise, at an AI operating system for financial advisors and regulated firms (wealth management, RIAs, broker-dealers). Own users, roles and permissions, SCIM, checkout, billing and license upgrades, plus the GraphQL enterprise API, data export, usage reports, compliance and data-retention settings, and consent detection.",
+    bullets: [
+      "Helped achieve $4M in enterprise revenue. Built and shipped the enterprise feature set: SCIM, GraphQL API, data export, and compliance settings.",
+      "Launched SCIM automated provisioning to 6 large enterprise accounts within 2 months, cutting manually created users in those accounts by 80%.",
+      "Zero data-mishandling incidents. Designed a security-focused data export process and feature for regulated customers.",
+      "Partnered with solutions engineers and account executives to pilot and launch Jump with enterprise buyers and compliance stakeholders.",
+    ],
+  },
+  {
     company: "Cogility",
     title: "Senior Product Manager",
-    dates: "Oct 2021 - Present",
+    dates: "Oct 2021 - May 2026",
     description:
       "Lead product strategy and end-to-end delivery for a Decision Intelligence Platform serving federal agencies. Own a portfolio of 5 products: analyst-facing investigative tooling, compliance, identity management, data intake, and an AI service, supporting high-consequence security and insider threat workflows in classified and restricted environments.",
     bullets: [
