@@ -9,6 +9,8 @@ if (typeof window !== "undefined" && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
       process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://us.i.posthog.com",
     // "2025-05-24" default captures pageviews on history (SPA route) changes
     defaults: "2025-05-24",
+    disable_session_recording: false,
+    session_recording: { maskAllInputs: true },
   });
 }
 
